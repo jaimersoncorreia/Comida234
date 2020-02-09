@@ -2,3 +2,5 @@ target
 grailsw.bat
 .slcache/
 /out/
+/.ideaDataSources/
+/dataSources/

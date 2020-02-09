@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ca568d-8777-462d-b5ac-e1350229747d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/grails-app/views/areaRestrita/admin.gsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grails-app/views/areaRestrita/logar.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/controlePermissao/_listaUsuarios.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/controlePermissao/index.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Comida234-grailsPlugins.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Comida234-grailsPlugins.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Comida234.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Comida234.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comida234.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/Comida234.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Comida234.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Comida234.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +56,15 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="grails.last.selected.app.url" value="file://$PROJECT_DIR$" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/grails-app/views/areaRestrita" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="copyright.filetypes.GSP" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -105,6 +108,8 @@
       <option name="presentableId" value="Default" />
       <updated>1581209144448</updated>
       <workItem from="1581209146229" duration="537000" />
+      <workItem from="1581262254933" duration="1264000" />
+      <workItem from="1581263668573" duration="9146000" />
     </task>
     <servers />
   </component>
@@ -112,34 +117,46 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="278" y="44" width="800" height="672" key="#Notifications" timestamp="1581263734403">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="278" y="44" width="800" height="672" key="#Notifications/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581263734403" />
     <state x="278" y="44" width="800" height="672" key="#Project_Structure" timestamp="1581209280988">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="278" y="44" width="800" height="672" key="#Project_Structure/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581209280988" />
-    <state x="141" y="41" width="1197" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581209682652">
+    <state x="141" y="41" width="1197" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581263716613">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="141" y="41" width="1197" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581209682652" />
+    <state x="141" y="41" width="1197" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581263716613" />
+    <state x="311" y="73" width="734" height="614" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1581272103894">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="311" y="73" width="734" height="614" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581272103894" />
     <state x="461" y="139" width="424" height="479" key="FileChooserDialogImpl" timestamp="1581209199838">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="461" y="139" width="424" height="479" key="FileChooserDialogImpl/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581209199838" />
-    <state width="1324" height="187" key="GridCell.Tab.0.bottom" timestamp="1581214955654">
+    <state width="1324" height="187" key="GridCell.Tab.0.bottom" timestamp="1581273117558">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="187" key="GridCell.Tab.0.bottom/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581214955654" />
-    <state width="1324" height="187" key="GridCell.Tab.0.center" timestamp="1581214955653">
+    <state width="1324" height="187" key="GridCell.Tab.0.bottom/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581273117558" />
+    <state width="1324" height="187" key="GridCell.Tab.0.center" timestamp="1581273117557">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="187" key="GridCell.Tab.0.center/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581214955653" />
-    <state width="1324" height="187" key="GridCell.Tab.0.left" timestamp="1581214955653">
+    <state width="1324" height="187" key="GridCell.Tab.0.center/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581273117557" />
+    <state width="1324" height="187" key="GridCell.Tab.0.left" timestamp="1581273117557">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="187" key="GridCell.Tab.0.left/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581214955653" />
-    <state width="1324" height="187" key="GridCell.Tab.0.right" timestamp="1581214955653">
+    <state width="1324" height="187" key="GridCell.Tab.0.left/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581273117557" />
+    <state width="1324" height="187" key="GridCell.Tab.0.right" timestamp="1581273117558">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="187" key="GridCell.Tab.0.right/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581214955653" />
+    <state width="1324" height="187" key="GridCell.Tab.0.right/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581273117558" />
+    <state x="187" y="18" key="SettingsEditor" timestamp="1581263505992">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="187" y="18" key="SettingsEditor/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581263505992" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1581212844574">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
