@@ -119,6 +119,23 @@ log4j = {
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'autenticacao.Usuario'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'autenticacao.UsuarioPermissao'
 grails.plugin.springsecurity.authority.className = 'autenticacao.Permissao'
+
+grails.plugin.springsecurity.auth.loginFormUrl = '/areaRestrita/logar'
+grails.plugin.springsecurity.logout.afterLogoutUrl = '/areaRestrita/logout'
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/areaRestrita/admin'
+grails.plugin.springsecurity.failureHandler.defaultFailureUrl = '/areaRestrita/erro'
+grails.plugin.springsecurity.successHandler.alwaysUseDefault = false
+grails.plugin.springsecurity.dao.hideUserNotFoundExceptions = false
+grails.plugin.springsecurity.adh.errorPage="/j_spring_security_logout"
+grails.plugin.springsecurity.password.algorithm = 'SHA-256'
+
+grails.plugin.springsecurity.securityConfigType = "InterceptUrlMap"
+
+grails.plugin.springsecurity.interceptUrlMap = [
+        '/produto/index':         ['ROLE_ADMIN'],
+        '/**':               ['IS_AUTHENTICATED_ANONYMOUSLY']
+]
+
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/':                              ['permitAll'],
 	'/index':                         ['permitAll'],
@@ -129,4 +146,3 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	'/**/images/**':                  ['permitAll'],
 	'/**/favicon.ico':                ['permitAll']
 ]
-

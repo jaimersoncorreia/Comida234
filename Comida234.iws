@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ca568d-8777-462d-b5ac-e1350229747d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/areaRestrita/admin.gsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grails-app/views/areaRestrita/logar.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comida234-grailsPlugins.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Comida234-grailsPlugins.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comida234.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Comida234.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Comida234.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Comida234.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +56,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="grails.last.selected.app.url" value="file://$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/grails-app/views/areaRestrita" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/grails-app/views/areaRestrita" />
+    </key>
   </component>
   <component name="RunManager" selected="Grails.Grails: dev Comida234">
     <configuration name="Grails: dev Comida234" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -114,22 +124,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="461" y="139" width="424" height="479" key="FileChooserDialogImpl/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581209199838" />
-    <state width="1324" height="187" key="GridCell.Tab.0.bottom" timestamp="1581211462931">
+    <state width="1324" height="187" key="GridCell.Tab.0.bottom" timestamp="1581214955654">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="187" key="GridCell.Tab.0.bottom/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581211462931" />
-    <state width="1324" height="187" key="GridCell.Tab.0.center" timestamp="1581211462930">
+    <state width="1324" height="187" key="GridCell.Tab.0.bottom/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581214955654" />
+    <state width="1324" height="187" key="GridCell.Tab.0.center" timestamp="1581214955653">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="187" key="GridCell.Tab.0.center/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581211462930" />
-    <state width="1324" height="187" key="GridCell.Tab.0.left" timestamp="1581211462930">
+    <state width="1324" height="187" key="GridCell.Tab.0.center/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581214955653" />
+    <state width="1324" height="187" key="GridCell.Tab.0.left" timestamp="1581214955653">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="187" key="GridCell.Tab.0.left/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581211462930" />
-    <state width="1324" height="187" key="GridCell.Tab.0.right" timestamp="1581211462931">
+    <state width="1324" height="187" key="GridCell.Tab.0.left/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581214955653" />
+    <state width="1324" height="187" key="GridCell.Tab.0.right" timestamp="1581214955653">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="187" key="GridCell.Tab.0.right/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581211462931" />
+    <state width="1324" height="187" key="GridCell.Tab.0.right/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581214955653" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1581212844574">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581212844574" />
   </component>
   <component name="grailsSettings">
     <option name="map">
@@ -137,7 +151,7 @@
         <entry key="Comida234">
           <value>
             <GrailsSettings>
-              <option name="buildConfigCrc" value="865037834" />
+              <option name="buildConfigCrc" value="1368083581" />
               <option name="pluginDependenciesCrc" value="-700768440" />
               <option name="properties">
                 <map>
