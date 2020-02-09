@@ -1,8 +1,6 @@
 dataSource {
     pooled = true
-    driverClassName = "org.h2.Driver"
-    username = "sa"
-    password = ""
+    driverClassName = "org.postgresql.Driver"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -16,7 +14,10 @@ environments {
     development {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+            url = "jdbc:postgresql://localhost:15432/comida"
+            username = "development"
+            password = "development"
+            dialect = "org.hibernate.dialect.PostgreSQLDialect"
         }
     }
     test {
