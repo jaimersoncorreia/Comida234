@@ -9,12 +9,21 @@ class ControlePermissaoController {
     }
 
     def getUsuario(){
-
+        if(!params.id)
+            print(params.id)
+        else{
+            Usuario usuario = Usuario.get(params.id)
+            render usuario as JSON
+        }
     }
 
     def getPermissao(){
-        Permissao permissao = Permissao.get(params.id)
-        render permissao as JSON
+        if(!params.id)
+            print(params.id)
+        else{
+            Permissao permissao = Permissao.get(params.id)
+            render permissao as JSON
+        }
     }
 
     def listarPermissao(){
@@ -40,7 +49,15 @@ class ControlePermissaoController {
     }
 
     def excluirUsuario(){
-
+        def retorno = [:]
+        Usuario usuario = Usuario.get(params.id)
+        try {
+            usuario.delete(flush: true)
+            retorno["mensagem"] = "OK"
+        }catch(Exception ex){
+            retorno["mensagem"] = "ERRO"
+        }
+        render retorno as JSON
     }
 
     def excluirPermissao(){
@@ -64,7 +81,7 @@ class ControlePermissaoController {
 
     def salvarUsuario(){
         def retorno = [:]
-        Usuario usuario = new Usuario()
+        Usuario usuario = params.id? Usuario.get(params.id): new Usuario()
         usuario.username = params.login
         usuario.enabled = true
         usuario.passwordExpired = false

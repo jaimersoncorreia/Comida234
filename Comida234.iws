@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ca568d-8777-462d-b5ac-e1350229747d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/grails-app/views/controlePermissao/_listaPermissoes.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Comida234.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Comida234.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/controllers/autenticacao/ControlePermissaoController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/autenticacao/ControlePermissaoController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/controlePermissao/_listaPermissoes.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/controlePermissao/_listaPermissoes.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/controlePermissao/_listaUsuarios.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/controlePermissao/_listaUsuarios.gsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grails-app/views/controlePermissao/index.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/controlePermissao/index.gsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +107,7 @@
       <updated>1581209144448</updated>
       <workItem from="1581209146229" duration="537000" />
       <workItem from="1581262254933" duration="1264000" />
-      <workItem from="1581263668573" duration="18326000" />
+      <workItem from="1581263668573" duration="24061000" />
     </task>
     <servers />
   </component>
@@ -134,22 +135,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="461" y="139" width="424" height="479" key="FileChooserDialogImpl/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581209199838" />
-    <state width="1324" height="187" key="GridCell.Tab.0.bottom" timestamp="1581281538501">
+    <state width="1324" height="187" key="GridCell.Tab.0.bottom" timestamp="1581287621483">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="187" key="GridCell.Tab.0.bottom/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581281538501" />
-    <state width="1324" height="187" key="GridCell.Tab.0.center" timestamp="1581281538500">
+    <state width="1324" height="187" key="GridCell.Tab.0.bottom/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581287621483" />
+    <state width="1324" height="187" key="GridCell.Tab.0.center" timestamp="1581287621483">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="187" key="GridCell.Tab.0.center/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581281538500" />
-    <state width="1324" height="187" key="GridCell.Tab.0.left" timestamp="1581281538500">
+    <state width="1324" height="187" key="GridCell.Tab.0.center/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581287621483" />
+    <state width="1324" height="187" key="GridCell.Tab.0.left" timestamp="1581287621483">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="187" key="GridCell.Tab.0.left/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581281538500" />
-    <state width="1324" height="187" key="GridCell.Tab.0.right" timestamp="1581281538501">
+    <state width="1324" height="187" key="GridCell.Tab.0.left/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581287621482" />
+    <state width="1324" height="187" key="GridCell.Tab.0.right" timestamp="1581287621483">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1324" height="187" key="GridCell.Tab.0.right/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581281538501" />
+    <state width="1324" height="187" key="GridCell.Tab.0.right/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581287621483" />
     <state x="187" y="18" key="SettingsEditor" timestamp="1581263505992">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

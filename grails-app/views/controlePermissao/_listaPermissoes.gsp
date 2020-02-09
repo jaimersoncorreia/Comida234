@@ -1,7 +1,7 @@
 <table>
     <thead>
     <tr>
-        <th colspan="2">Permissão</th>
+        <th colspan="3">Permissão</th>
     </tr>
     </thead>
     

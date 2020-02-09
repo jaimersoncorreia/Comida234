@@ -57,7 +57,8 @@
                 return
             }
             $("#divMensagemUsuario").html("Usuário salvo com sucesso!")
-            $("input[name=login]").val('')
+            $("#formUsuario input[name=login]").val('')
+            $("#formUsuario input[name=id]").val('')
             carregarListaUsuarios()
         }
         
@@ -90,9 +91,20 @@
                 url: "getPermissao",
                 data: {"id":id},
                 success:function (data) {
-                    // $("form[name=formPermissao]").find( "input[name=permissao]").val(data.authority)
                     $("#formPermissao input[name=permissao]").val(data.authority)
                     $("#formPermissao input[name=id]").val(data.id)
+                }
+            })
+        }
+        
+        function alterarUsuario(id) {
+            $.ajax({
+                method: "POST",
+                url: "getUsuario",
+                data: {"id":id},
+                success:function (data) {
+                    $("#formUsuario input[name=login]").val(data.username)
+                    $("#formUsuario input[name=id]").val(data.id)
                 }
             })
         }
@@ -104,8 +116,31 @@
                     url:"excluirPermissao",
                     data:{"id":id},
                     success: function (data) {
-                        data.mensagem == "OK"?carregarListaPermissao():$("#divMensagemPermissao").html("Não foi possível excluir")
+                        if(data.mensagem == "OK"){
+                            carregarListaPermissao()
+                            $("#divMensagemPermissao").html("Excluido com sucesso")
+                        }else{
+                            $("#divMensagemPermissao").html("Não foi possível excluir")
+                        }
+                    }
+                })
+            }
+        }
+        
+        function excluirUsuario(id) {
+            if(confirm("Deseja realmente excluir o usuario?")){
+                $.ajax({
+                    method:"POST",
+                    url:"excluirUsuario",
+                    data:{"id":id},
+                    success: function (data) {
                         console.log(data)
+                        if(data.mensagem == "OK"){
+                            carregarListaUsuarios()
+                            $("#divMensagemUsuario").html("Excluido com sucesso")
+                        }else{
+                            $("#divMensagemUsuario").html("Não foi possível excluir")
+                        }
                     }
                 })
             }
@@ -117,8 +152,9 @@
     <div id="divUsuario">
         <div id="divFormUsuario">
             <div id="divMensagemUsuario"></div>
-            <g:formRemote name="formUsuario" url="[controller:'controlePermissao', action:'salvarUsuario']" onSuccess="retornoSalvarUsuario(data)">
+            <g:formRemote id="formUsuario" name="formUsuario" url="[controller:'controlePermissao', action:'salvarUsuario']" onSuccess="retornoSalvarUsuario(data)">
                 <label>Login:</label><input type="text" name="login" value=""/>
+                <input type="hidden" name="id"/>
                 <input type="submit" name="salvar" value="Salvar"/>
             </g:formRemote>
         </div>
