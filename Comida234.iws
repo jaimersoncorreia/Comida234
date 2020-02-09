@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d965107-b3b9-408d-a1fd-b8c7e1b82416" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comida234.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Comida234.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/DataSource.groovy" afterDir="false" />
-    </list>
+    <list default="true" id="3d965107-b3b9-408d-a1fd-b8c7e1b82416" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,10 +51,10 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
-    <configuration name="Grails: Comida234" type="GrailsRunConfigurationType" factoryName="Grails">
+  <component name="RunManager" selected="Grails.Grails: prod Comida234">
+    <configuration name="Grails: dev Comida234" type="GrailsRunConfigurationType" factoryName="Grails">
       <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
+      <setting name="cmdLine" value="dev run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="grailsApplicationRoot" value="$PROJECT_DIR$" />
       <setting name="launchBrowser" value="false" />
@@ -67,6 +62,20 @@
       <setting name="depsClasspath" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Grails: prod Comida234" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="prod run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="grailsApplicationRoot" value="$PROJECT_DIR$" />
+      <setting name="launchBrowser" value="false" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Grails.Grails: dev Comida234" />
+      <item itemvalue="Grails.Grails: prod Comida234" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -78,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581207760256</updated>
-      <workItem from="1581207761921" duration="680000" />
+      <workItem from="1581207761921" duration="876000" />
     </task>
     <servers />
   </component>
@@ -86,10 +95,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="141" y="41" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581208314616">
+    <state x="141" y="41" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581208636873">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="141" y="41" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581208314616" />
+    <state x="141" y="41" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581208636873" />
     <state x="461" y="139" width="424" height="479" key="FileChooserDialogImpl" timestamp="1581207783866">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -121,7 +130,7 @@
         <entry key="Comida234">
           <value>
             <GrailsSettings>
-              <option name="buildConfigCrc" value="-1720088449" />
+              <option name="buildConfigCrc" value="865037834" />
               <option name="pluginDependenciesCrc" value="-700768440" />
               <option name="properties">
                 <map>
