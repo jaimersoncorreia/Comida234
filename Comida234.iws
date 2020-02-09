@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18ca568d-8777-462d-b5ac-e1350229747d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Comida234.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Comida234.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comida234.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/Comida234.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comida234.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Comida234.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Bebida.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Bebida.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Cliente.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Cliente.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Estoque.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Estoque.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/ItemPedido.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/ItemPedido.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Pedido.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Pedido.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Prato.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Prato.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Produto.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Produto.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Sobremesa.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Sobremesa.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581209144448</updated>
-      <workItem from="1581209146229" duration="136000" />
+      <workItem from="1581209146229" duration="437000" />
     </task>
     <servers />
   </component>
@@ -117,6 +122,24 @@
     <option name="map">
       <map>
         <entry key="Comida234">
+          <value>
+            <GrailsSettings>
+              <option name="buildConfigCrc" value="865037834" />
+              <option name="pluginDependenciesCrc" value="-700768440" />
+              <option name="properties">
+                <map>
+                  <entry key="grails.global.plugins.dir" value="$USER_HOME$/.grails/2.3.4/global-plugins" />
+                  <entry key="grails.project.fork.run" value="true" />
+                  <entry key="grails.project.fork.test" value="true" />
+                  <entry key="grails.project.plugins.dir" value="target/work/plugins" />
+                  <entry key="grails.project.work.dir" value="target/work" />
+                  <entry key="grails.work.dir" value="$USER_HOME$/.grails/2.3.4" />
+                </map>
+              </option>
+            </GrailsSettings>
+          </value>
+        </entry>
+        <entry key="Comida234-grailsPlugins">
           <value>
             <GrailsSettings />
           </value>
