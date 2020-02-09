@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="18ca568d-8777-462d-b5ac-e1350229747d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Bebida.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Bebida.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Cliente.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Cliente.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Estoque.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Estoque.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/ItemPedido.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/ItemPedido.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Pedido.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Pedido.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Prato.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Prato.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Produto.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Produto.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Sobremesa.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/br/com/jaimerson/Sobremesa.groovy" afterDir="false" />
-    </list>
+    <list default="true" id="18ca568d-8777-462d-b5ac-e1350229747d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,34 +52,30 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Grails.Grails: Comida234">
-    <configuration name="Grails: Comida234" type="GrailsRunConfigurationType" factoryName="Grails">
+  <component name="RunManager" selected="Grails.Grails: dev Comida234">
+    <configuration name="Grails: dev Comida234" type="GrailsRunConfigurationType" factoryName="Grails">
       <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
+      <setting name="cmdLine" value="dev run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="grailsApplicationRoot" value="$PROJECT_DIR$" />
-      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowser" value="false" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method v="2" />
     </configuration>
-    <configuration default="false" name="Grails:@grails.project.name@" type="GrailsRunConfigurationType" factoryName="Grails Application">
-      <module name="@grails.project.name@" />
+    <configuration name="Grails: prod Comida234" type="GrailsRunConfigurationType" factoryName="Grails">
       <setting name="vmparams" value="" />
-      <setting name="grailsparams" value="" />
-      <setting name="hostik" value="localhost" />
-      <setting name="port" value="8080" />
-      <setting name="jndi" value="false" />
-      <setting name="recomp" value="false" />
-      <setting name="recompileFreq" value="3" />
-      <setting name="launchBrowser" value="true" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
+      <setting name="cmdLine" value="prod run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="grailsApplicationRoot" value="$PROJECT_DIR$" />
+      <setting name="launchBrowser" value="false" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Grails.Grails: Comida234" />
+      <item itemvalue="Grails.Grails: dev Comida234" />
+      <item itemvalue="Grails.Grails: prod Comida234" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -101,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581209144448</updated>
-      <workItem from="1581209146229" duration="437000" />
+      <workItem from="1581209146229" duration="537000" />
     </task>
     <servers />
   </component>
@@ -113,10 +100,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="278" y="44" width="800" height="672" key="#Project_Structure/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581209280988" />
+    <state x="141" y="41" width="1197" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581209682652">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="141" y="41" width="1197" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581209682652" />
     <state x="461" y="139" width="424" height="479" key="FileChooserDialogImpl" timestamp="1581209199838">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="461" y="139" width="424" height="479" key="FileChooserDialogImpl/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581209199838" />
+    <state width="1324" height="187" key="GridCell.Tab.0.bottom" timestamp="1581209687010">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1324" height="187" key="GridCell.Tab.0.bottom/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581209687010" />
+    <state width="1324" height="187" key="GridCell.Tab.0.center" timestamp="1581209687009">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1324" height="187" key="GridCell.Tab.0.center/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581209687009" />
+    <state width="1324" height="187" key="GridCell.Tab.0.left" timestamp="1581209687009">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1324" height="187" key="GridCell.Tab.0.left/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581209687009" />
+    <state width="1324" height="187" key="GridCell.Tab.0.right" timestamp="1581209687010">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1324" height="187" key="GridCell.Tab.0.right/0.768.1366.768/0.0.1366.768@0.0.1366.768" timestamp="1581209687010" />
   </component>
   <component name="grailsSettings">
     <option name="map">
