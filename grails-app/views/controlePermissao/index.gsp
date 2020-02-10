@@ -14,13 +14,13 @@
             margin: 5px;
         }
         #divPermissoes{
-            width: 30%;
+            width: 45%;
             float: right;
             border: 1px solid #ffcc00;
             margin: 5px;
         }
         #divDetalhesUsuario{
-            width: 35%;
+            width: 20%;
             float: left;
             border: 1px solid #000000;
             margin: 5px;
@@ -97,14 +97,25 @@
             })
         }
         
+        function listaUsuarioPermissao(data) {
+            for(i in data.permissoes){
+                let permissao = data.permissoes[i]
+                $("#divDetalhesUsuario").append(permissao.authority + "<a href='javascript: desvincularPermissao("+permissao.id+")'>  X</a><br/>")
+            }
+        }
+        
         function alterarUsuario(id) {
             $.ajax({
                 method: "POST",
                 url: "getUsuario",
                 data: {"id":id},
                 success:function (data) {
-                    $("#formUsuario input[name=login]").val(data.username)
-                    $("#formUsuario input[name=id]").val(data.id)
+                    // console.log(data.permissoes[0].authority)
+                    // console.log(data.usuario.username)
+                    $("#formUsuario input[name=login]").val(data.usuario.username)
+                    $("#formUsuario input[name=id]").val(data.usuario.id)
+                    $("#divDetalhesUsuario").html("")
+                    listaUsuarioPermissao(data)
                 }
             })
         }
@@ -144,6 +155,38 @@
                     }
                 })
             }
+        }
+        
+        function vincularPermissao(idPermissao) {
+            const idUsuario = $("#formUsuario input[name=id]").val()
+            $.ajax({
+                method:"POST",
+                url:"vincularPermissao",
+                data:{"idPermissao":idPermissao, "idUsuario":idUsuario},
+                success: function (data) {
+                    if(data.mensagem == "OK"){
+                        alterarUsuario(idUsuario)
+                    }else{
+                        $("#divMensagemPermissao").html("Não foi possível vincular permissao com o usuario")
+                    }
+                }
+            })
+        }
+    
+        function desvincularPermissao(idPermissao) {
+            const idUsuario = $("#formUsuario input[name=id]").val()
+            $.ajax({
+                method:"POST",
+                url:"desvincularPermissao",
+                data:{"idPermissao":idPermissao, "idUsuario":idUsuario},
+                success: function (data) {
+                    if(data.mensagem == "OK"){
+                        alterarUsuario(idUsuario)
+                    }else{
+                        $("#divMensagemPermissao").html("Não foi possível vincular permissao com o usuario")
+                    }
+                }
+            })
         }
     </script>
 </head>

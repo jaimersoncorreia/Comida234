@@ -9,11 +9,14 @@ class ControlePermissaoController {
     }
 
     def getUsuario(){
+        def retorno = [:]
         if(!params.id)
             print(params.id)
         else{
             Usuario usuario = Usuario.get(params.id)
-            render usuario as JSON
+            retorno["usuario"] = usuario
+            retorno["permissoes"] = usuario.getAuthorities()
+            render retorno as JSON
         }
     }
 
@@ -96,6 +99,37 @@ class ControlePermissaoController {
         }
         usuario.save(flush: true)
         retorno["mensagem"] = "OK"
+        render retorno as JSON
+    }
+
+    def vincularPermissao(){
+        def retorno = [:]
+        Usuario usuario = Usuario.get(params.idUsuario)
+        Permissao permissao = Permissao.get(params.idPermissao)
+
+        try{
+            UsuarioPermissao.create(usuario, permissao, true)
+            retorno["mensagem"] = "OK"
+        }catch(Exception ex){
+            retorno["mensagem"] = "ERRO"
+        }
+        render retorno as JSON
+    }
+
+    def desvincularPermissao(){
+        def retorno = [:]
+        Usuario usuario = Usuario.get(params.idUsuario)
+        Permissao permissao = Permissao.get(params.idPermissao)
+
+        try{
+            if(UsuarioPermissao.remove(usuario, permissao, true)){
+                retorno["mensagem"] = "OK"
+            }else {
+                retorno["mensagem"] = "ERRO"
+            }
+        }catch(Exception ex){
+            retorno["mensagem"] = "ERRO"
+        }
         render retorno as JSON
     }
 }
